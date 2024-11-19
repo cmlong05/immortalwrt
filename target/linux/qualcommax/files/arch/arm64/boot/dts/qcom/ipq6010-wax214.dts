@@ -1,7 +1,7 @@
 /dts-v1/;
 
-#include "ipq6018.dtsi"
 #include "ipq6018-512m.dtsi"
+#include "ipq6018-fixed-smps.dtsi"
 #include "ipq6018-ess.dtsi"
 #include "ipq6018-nss.dtsi"
 
@@ -168,20 +168,4 @@
 	status = "okay";
 	qcom,ath11k-fw-memory-mode = <1>;
 	qcom,ath11k-calibration-variant = "Netgear-WAX214";
-};
-
-&CPU0 {
-	/delete-property/ cpu-supply;
-};
-
-&CPU1 {
-	/delete-property/ cpu-supply;
-};
-
-&CPU2 {
-	/delete-property/ cpu-supply;
-};
-
-&CPU3 {
-	/delete-property/ cpu-supply;
 };

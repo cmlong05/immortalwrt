@@ -1,5 +1,5 @@
-#include "ipq6018.dtsi"
 #include "ipq6018-512m.dtsi"
+#include "ipq6018-fixed-smps.dtsi"
 #include "ipq6018-ess.dtsi"
 #include "ipq6018-nss.dtsi"
 
@@ -204,10 +204,6 @@
 	status = "okay";
 };
 
-&rpm {
-	status = "disabled";
-};
-
 &mdio {
 	status = "okay";
 	pinctrl-0 = <&mdio_pins>;
@@ -294,20 +290,4 @@
 &wifi {
 	status = "okay";
 	qcom,ath11k-fw-memory-mode = <1>;
-};
-
-&CPU0 {
-	/delete-property/ cpu-supply;
-};
-
-&CPU1 {
-	/delete-property/ cpu-supply;
-};
-
-&CPU2 {
-	/delete-property/ cpu-supply;
-};
-
-&CPU3 {
-	/delete-property/ cpu-supply;
 };

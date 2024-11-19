@@ -11,7 +11,7 @@
 
 / {
 	model = "Yuncore AX880";
-	compatible = "yuncore,ax880", "qcom,ipq8074", "qcom,ipq8074-hk09";
+	compatible = "yuncore,ax880", "qcom,ipq8074";
 
 	aliases {
 		serial0 = &blsp1_uart5;

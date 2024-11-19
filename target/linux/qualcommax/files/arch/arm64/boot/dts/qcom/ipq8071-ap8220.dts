@@ -301,14 +301,9 @@
 	};
 };
 
-&wifi0 {
+&wifi {
 	status = "okay";
-	qcom,board_id = <0x92>;
-};
-
-&wifi1 {
-	status = "okay";
-	qcom,board_id = <0x292>;
+	qcom,ath11k-fw-memory-mode = <1>;
 };
 
 &edma {
