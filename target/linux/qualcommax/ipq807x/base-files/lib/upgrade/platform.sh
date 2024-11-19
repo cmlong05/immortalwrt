@@ -127,6 +127,12 @@ platform_pre_upgrade() {
 
 platform_do_upgrade() {
 	case "$(board_name)" in
+	aliyun,ap8220|\
+	linksys,homewrk|\
+	zte,mf269-stock)
+		CI_UBIPART="rootfs"
+		nand_do_upgrade "$1"
+		;;
 	arcadyan,aw1000|\
 	cmcc,rm2-6|\
 	compex,wpq873|\
@@ -164,10 +170,6 @@ platform_do_upgrade() {
 		# force altbootcmd which handles partition change in u-boot
 		fw_setenv bootcount 3
 		fw_setenv upgrade_available 1
-		nand_do_upgrade "$1"
-		;;
-	linksys,homewrk)
-		CI_UBIPART="rootfs"
 		nand_do_upgrade "$1"
 		;;
 	linksys,mx4200v1|\
@@ -282,10 +284,6 @@ platform_do_upgrade() {
 	zte,mf269)
 		CI_KERN_UBIPART="ubi_kernel"
 		CI_ROOT_UBIPART="rootfs"
-		nand_do_upgrade "$1"
-		;;
-	zte,mf269-stock)
-		CI_UBIPART="rootfs"
 		nand_do_upgrade "$1"
 		;;
 	zyxel,nbg7815)
