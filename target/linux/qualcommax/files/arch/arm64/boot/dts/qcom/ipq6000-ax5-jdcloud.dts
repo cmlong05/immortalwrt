@@ -4,7 +4,7 @@
 
 / {
 	model = "Redmi AX5 JDCloud";
-	compatible = "redmi,ax5-jdcloud", "qcom,ipq6018-cp03", "qcom,ipq6018";
+	compatible = "redmi,ax5-jdcloud", "qcom,ipq6018";
 
 	chosen {
 		/delete-property/ bootargs-append;

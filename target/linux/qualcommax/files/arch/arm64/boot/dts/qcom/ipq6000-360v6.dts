@@ -11,7 +11,7 @@
 
 / {
 	model = "Qihoo 360V6";
-	compatible = "qihoo,360v6", "qcom,ipq6018-cp03", "qcom,ipq6018";
+	compatible = "qihoo,360v6", "qcom,ipq6018";
 
 	aliases {
 		serial0 = &blsp1_uart3;
@@ -27,6 +27,7 @@
 	};
 
 	chosen {
+		stdout-path = "serial0:115200n8";
 		bootargs-append = " root=/dev/ubiblock0_1";
 	};
 
