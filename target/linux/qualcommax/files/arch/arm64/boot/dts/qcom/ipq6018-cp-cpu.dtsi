@@ -2,20 +2,16 @@
 
 &CPU0 {
 	cpu-supply = <&apc_vreg>;
-	voltage-tolerance = <1>;
 };
 
 &CPU1 {
 	cpu-supply = <&apc_vreg>;
-	voltage-tolerance = <1>;
 };
 
 &CPU2 {
 	cpu-supply = <&apc_vreg>;
-	voltage-tolerance = <1>;
 };
 
 &CPU3 {
 	cpu-supply = <&apc_vreg>;
-	voltage-tolerance = <1>;
 };
