@@ -17,7 +17,7 @@ Signed-off-by: Ramasamy Kaliappan <quic_rkaliapp@quicinc.com>
 
 --- a/include/net/cfg80211.h
 +++ b/include/net/cfg80211.h
-@@ -8827,6 +8827,7 @@ bool cfg80211_rx_spurious_frame(struct n
+@@ -8871,6 +8871,7 @@ bool cfg80211_rx_spurious_frame(struct n
   * @dev: The device the frame matched to
   * @addr: the transmitter address
   * @gfp: context flags
@@ -25,7 +25,7 @@ Signed-off-by: Ramasamy Kaliappan <quic_rkaliapp@quicinc.com>
   *
   * This function is used in AP mode (only!) to inform userspace that
   * an associated station sent a 4addr frame but that wasn't expected.
-@@ -8836,7 +8837,8 @@ bool cfg80211_rx_spurious_frame(struct n
+@@ -8880,7 +8881,8 @@ bool cfg80211_rx_spurious_frame(struct n
   * for a reason other than not having a subscription.)
   */
  bool cfg80211_rx_unexpected_4addr_frame(struct net_device *dev,
