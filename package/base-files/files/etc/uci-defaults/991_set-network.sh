@@ -16,7 +16,6 @@ uci del dhcp.lan.ra_slaac
 uci add_list dhcp.lan.ra_flags='none'
 
 uci commit dhcp
-/etc/init.d/odhcpd restart
 
 uci set network.wan6.reqaddress='try'
 uci set network.wan6.reqprefix='auto'
@@ -25,4 +24,5 @@ uci set network.lan.ip6ifaceid='eui64'
 uci del network.globals.ula_prefix
 
 uci commit network
-/etc/init.d/network restart
+
+exit 0

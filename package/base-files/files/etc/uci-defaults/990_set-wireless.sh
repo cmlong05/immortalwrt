@@ -73,4 +73,5 @@ done
 
 # 提交配置并重启网络服务
 uci commit wireless
-/etc/init.d/network restart
+
+exit 0
