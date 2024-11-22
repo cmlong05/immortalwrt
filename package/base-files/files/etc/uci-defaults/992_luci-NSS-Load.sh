@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 指定luci文件所在目录
 luci_dir="/usr/share/rpcd/ucode/luci"
 
