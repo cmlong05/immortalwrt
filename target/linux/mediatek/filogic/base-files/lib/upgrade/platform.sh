@@ -81,10 +81,12 @@ platform_do_upgrade() {
 	livinet,zr-3020-ubootmod|\
 	mediatek,mt7981-rfb|\
 	mediatek,mt7988a-rfb|\
+	mercusys,mr90x-v1-ubi|\
 	nokia,ea0326gmp|\
 	openwrt,one|\
 	netcore,n60|\
 	qihoo,360t7|\
+	routerich,ax3000-ubootmod|\
 	tplink,tl-xdr4288|\
 	tplink,tl-xdr6086|\
 	tplink,tl-xdr6088|\
