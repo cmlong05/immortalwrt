@@ -51,7 +51,7 @@ x86/*)
 esac
 
 if [ -n "$cpu_freq" ] && [ -n "$cpu_temp" ]; then
-	echo -n "$cpu_arch x $cpu_cores ($cpu_freq, $cpu_temp)"
+	echo -n "$cpu_arch x $cpu_cores ($cpu_freq $cpu_temp)"
 elif [ -n "$cpu_freq" ] && [ -z "$cpu_temp" ]; then
 	echo -n "$cpu_arch x $cpu_cores ($cpu_freq)"
 elif [ -z "$cpu_freq" ] && [ -n "$cpu_temp" ]; then
