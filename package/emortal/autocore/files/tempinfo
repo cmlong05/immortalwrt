@@ -46,4 +46,3 @@ elif [ -z "$cpu_temp" ] && [ -n "$wifi_temp" ]; then
 else
 	echo -n "No temperature info"
 fi
-
