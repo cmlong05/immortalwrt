@@ -25,7 +25,7 @@ Signed-off-by: David Rapan <david@rapan.cz>
 
 --- a/net/mac80211/tx.c
 +++ b/net/mac80211/tx.c
-@@ -39,6 +39,10 @@
+@@ -40,6 +40,10 @@
  
  /* misc utils */
  
@@ -36,7 +36,7 @@ Signed-off-by: David Rapan <david@rapan.cz>
  static __le16 ieee80211_duration(struct ieee80211_tx_data *tx,
  				 struct sk_buff *skb, int group_addr,
  				 int next_frag_len)
-@@ -4311,6 +4315,17 @@ void __ieee80211_subif_start_xmit(struct
+@@ -4294,6 +4298,17 @@ void __ieee80211_subif_start_xmit(struct
  	if (IS_ERR(sta))
  		sta = NULL;
  
