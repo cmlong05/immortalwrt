@@ -891,7 +891,7 @@ v2: Add comment about the reset-gpios prop rename
 +CONFIG_ERRNO_STR=y
 --- a/doc/board/rockchip/rockchip.rst
 +++ b/doc/board/rockchip/rockchip.rst
-@@ -136,6 +136,7 @@ List of mainline supported Rockchip boar
+@@ -137,6 +137,7 @@ List of mainline supported Rockchip boar
  * rk3576
       - Firefly ROC-RK3576-PC (roc-pc-rk3576)
       - Generic RK3576 (generic-rk3576)
